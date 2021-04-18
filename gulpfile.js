@@ -38,7 +38,7 @@ gulp.task('js',function(){
 gulp.task('browser-sync', function() {
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "."
         }
     });
 });

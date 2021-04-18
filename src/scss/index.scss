@@ -172,26 +172,31 @@ body{
                 }
             }
         }
-        @media only screen and (max-width: 900px){
-            .hero{
-                .hero__item{
-                    display: flex;
-                    flex-direction: column;
-                    position: absolute;
-                    bottom: 0;
-                        .item{
-                            max-width: 300px;
-                            margin: 15px;
-                            .item__title{
-                                text-align: center;
-                                
-                            }
-                            .item__subtitle{
-                                text-align: center;
-                                
-                            }
+@media only screen and (max-width: 900px){
+.hero{
+    .hero__item{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        bottom: 0;
+            .item{
+                max-width: 300px;
+                margin: 15px;
+                    .item__title{
+                        text-align: center;                              
+                        }
+                    .item__subtitle{
+                        text-align: center;                            
                         }
                     }
                 }
             }
+        }
         
+@media only screen and (max-width: 778px){
+    header{
+        .title{
+            margin: 0;
+        }
+    }
+}
