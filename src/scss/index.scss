@@ -54,6 +54,13 @@ body{
             font-size: 18px;
             font-weight: 400;
             ul{
+                .ham{
+                    display: none;
+                    button{
+                        display: none;
+                    }
+                }
+
                 list-style: none;
                 display: flex;
                 li{
@@ -195,8 +202,90 @@ body{
         
 @media only screen and (max-width: 778px){
     header{
+        padding: 25px ;
         .title{
             margin: 0;
         }
+        nav{
+            ul{
+                li{
+                    a{
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+    .hero{
+        .hero__title{
+                h1{
+                font-size: 80px;
+            }
+        }
+        .hero__text{
+            .hero__country{
+                font-size: 40px;
+                font-style: italic;
+                font-family: 'Barbershop';
+                position: absolute;
+                top: -10px;  
+            }
+            .hero__info{
+                position: absolute;
+                top: 0;
+                left: 110px;
+                letter-spacing: 5.5px;
+                text-transform: uppercase;
+                font-family: 'Gilroy EB';
+                font-size: 15px;
+            }
+        }
     }
 }
+@media only screen and (max-width: 500px){
+    .hero{
+        .hero__title{
+                h1{
+                font-size: 65px;
+            }
+        }
+    }
+    header{
+        nav{
+            ul{
+                .ham{
+                    display: inline;
+                    position: absolute;
+                    /* always keep ham on top of everything */
+                    z-index: 1000;
+                    top: 30px;
+                    right: 20px;
+                    width: 100%;
+                    max-width: 40px;
+                    height:100%;
+                    max-height: 40px;
+                    border: none;
+                    cursor: pointer;
+                    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
+                    background-size: 100%;
+                    border-radius: 5px;
+                    background: none;
+                    outline: none !important;
+                }
+            }
+        }
+    }
+    .closeText{
+        display: none;
+      }
+      .showClose {
+        background-image: url("https://ljc-dev.github.io/testing0/ham-close.svg");
+        svg{
+          display: none;
+        }
+      }
+      .showNav {
+        /* show the menu */
+        transform: translateY(0); 
+      }
+    }
