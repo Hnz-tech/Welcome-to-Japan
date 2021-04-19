@@ -53,14 +53,10 @@ body{
          nav{
             font-size: 18px;
             font-weight: 400;
-            ul{
-                .ham{
-                    display: none;
-                    button{
-                        display: none;
-                    }
-                }
-
+            .ham{
+                display: none;
+            }
+            ul{ 
                 list-style: none;
                 display: flex;
                 li{
@@ -91,7 +87,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: inherit;
-    padding-top: 350px;
+    padding-top: 300px;
     align-items: center;
     .hero__item{
         position: absolute;
@@ -122,12 +118,31 @@ body{
             h1{
                 display: inline-block;
                 font-family: 'Gilroy EB';
-                font-size: 100px;
+                font-size: 140px;
                 font-weight: 400;
                 text-transform: uppercase;
                 letter-spacing: 10.5px;
+                
+                span{
+                    position: relative;
+                &::before{
+                    content: '';
+                    display: inline-block;
+                    width: 59px;
+                    height: 59px;
+                    position: absolute;
+                    bottom: 58px;
+                    left: 26px;
+                    -moz-border-radius: 50%;
+                    -webkit-border-radius: 50%;
+                    border-radius: 50%;
+                    background-color: #ff0000;
+                }
+
+                }
             }
         }
+    }
     .hero__text{
         display: flex;
         justify-content: space-between;
@@ -149,7 +164,7 @@ body{
             font-family: 'Gilroy EB';
         }
     }
-}
+
 @media only screen and (max-width: 1400px){
     .hero{
         .hero__item{
@@ -168,6 +183,26 @@ body{
             display: flex;
             justify-content: inherit;
             padding-top: 200px;
+                .hero__title{
+                        h1{
+                        font-size: 110px;
+                        span{
+                            &::before{
+                                content: '';
+                                display: inline-block;
+                                width: 45px;
+                                height: 45px;
+                                position: absolute;
+                                bottom: 46px;
+                                left: 21px;
+                                -moz-border-radius: 50%;
+                                -webkit-border-radius: 50%;
+                                border-radius: 50%;
+                                background-color: #ff0000;
+                            }
+                        }
+                    }
+                }
             .hero__item{
                 display: flex;
                 flex-direction: row;
@@ -187,7 +222,7 @@ body{
         position: absolute;
         bottom: 0;
             .item{
-                max-width: 300px;
+                max-width: 400px;
                 margin: 15px;
                     .item__title{
                         text-align: center;                              
@@ -220,6 +255,21 @@ body{
         .hero__title{
                 h1{
                 font-size: 80px;
+                span{
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        bottom: 33px;
+                        left: 14px;
+                        -moz-border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        background-color: #ff0000;
+                    }
+                }
             }
         }
         .hero__text{
@@ -252,25 +302,28 @@ body{
     }
     header{
         nav{
-            ul{
-                .ham{
-                    display: inline;
-                    position: absolute;
-                    /* always keep ham on top of everything */
-                    z-index: 1000;
-                    top: 30px;
-                    right: 20px;
-                    width: 100%;
-                    max-width: 40px;
-                    height:100%;
-                    max-height: 40px;
-                    border: none;
-                    cursor: pointer;
-                    background-image: url("https://ljc-dev.github.io/testing0/ham.svg");
-                    background-size: 100%;
-                    border-radius: 5px;
-                    background: none;
-                    outline: none !important;
+            
+        }
+
+    }
+    .hero{
+        .hero__title{
+                h1{
+                font-size: 80px;
+                span{
+                    &::before{
+                        content: '';
+                        display: inline-block;
+                        width: 35px;
+                        height: 35px;
+                        position: absolute;
+                        bottom: 33px;
+                        left: 14px;
+                        -moz-border-radius: 50%;
+                        -webkit-border-radius: 50%;
+                        border-radius: 50%;
+                        background-color: #ff0000;
+                    }
                 }
             }
         }
