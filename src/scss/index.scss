@@ -344,13 +344,29 @@ input {
                     ul{ 
                         li{
                             a{
-                            padding: 0 5px;
+                                padding: 0px 4px;
                             }
                         }
                     }
              }
     }
     .hero{
+            .hero__item{
+                display: flex;
+                flex-direction: column;
+                position: absolute;
+                bottom: 0;
+                    .item{
+                        max-width: 400px;
+                        margin: 2px;
+                            .item__title{
+                                text-align: center;                              
+                                }
+                            .item__subtitle{
+                                text-align: center;                            
+                                }
+                            }
+                        }
         .hero__subtext{
             .hero__title{
                 h1{
@@ -454,7 +470,7 @@ input {
         flex-direction: column;
         }
         .hero{
-            padding-top: 140px;
+            padding-top: 120px;
             .hero__subtext{
                 .hero__title{
                     h1{
