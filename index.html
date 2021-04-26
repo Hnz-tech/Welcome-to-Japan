@@ -5,28 +5,30 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./src/css/index.min.css">
-    <link rel="shortcut icon" href="./src/assets/flag-for-japan_1f1ef-1f1f5.png" type="image/x-icon">
+    <link rel="shortcut icon" href="./src/assets/icon-jap.png" type="image/x-icon">
     <title>Welcome to Japan</title>
 </head>
 <body>
     <div class="wrapper">
         <header>
-            <div class="title">Travel</div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="">highlights</a></li>
-                    <li><a href="">Explore</a></li>
-                    <li><a href="">Stay</a></li>
-                    <li><a href="">Stories</a></li>
-                </ul>
+            <div class="title" id="title">Travel</div>
+                <nav class="navbar">
+                    <input type="checkbox" id="checkbox" class="mobile-menu__checkbox">
+                    <label for="checkbox" class="mobile-menu__btn"><div class="mobile-menu__icon"></div></label>
+                    <ul id="navbar">
+                        <li><a href="">highlights</a></li>
+                        <li><a href="">Explore</a></li>
+                        <li><a href="">Stay</a></li>
+                        <li><a href="">Stories</a></li>
+                    </ul>
             </nav>
         </header>
         <div class="hero">
             <div class="hero__subtext">
+                <div class="hero__title jap">
+                    <p>ようこそ</p>
+                </div>      
                 <div class="hero__title">
-                    <div class="hero__title jap">
-                        <p>ようこそ</p>
-                    </div>                
                     <h1>Welc<span>o</span>me</h1>
                 </div>
                 <div class="hero__text">
@@ -40,7 +42,7 @@
                         <p>Explore festivals</p>
                     </div>
                     <div class="item__subtitle">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aut dicta expedita esse delectus! Rerum ipsam consequatur sapiente rem deleniti officia vel maxime natus debitis!</p>
+                        <p>Japan is a country of festivals. Any occation can be cause for celebration. Be it the changing of the seasons or the harvesting of rice</p>
                     </div>                   
                 </div>
                 <div class="item">
@@ -48,7 +50,7 @@
                         <p>Food deversity</p>
                     </div>
                     <div class="item__subtitle">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aut dicta expedita esse delectus! Rerum ipsam consequatur sapiente rem deleniti officia vel maxime natus debitis!</p>
+                        <p>The Japanese culinary scene is stepped in tradition. From famouse dishes suck as Sushi, Miso and Ramen, but also dishes only available in certain cities and regions</p>
                     </div>                   
                 </div>
                 <div class="item">
@@ -56,11 +58,12 @@
                         <p>Stunning nature</p>
                     </div>
                     <div class="item__subtitle">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aut dicta expedita esse delectus! Rerum ipsam consequatur sapiente rem deleniti officia vel maxime natus debitis!</p>
+                        <p>As Japanese archipelago stretches north and south, having many islands, mountains and valleys that split the land, a variety of natural enviroments are observed</p>
                     </div>                   
                 </div>
             </div>
         </div>
     </div>
+    <script src="./src/js/index.js"></script>
 </body>
 </html>
